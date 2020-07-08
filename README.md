@@ -1,84 +1,142 @@
-# Leaflet Homework - Visualizing Data with Leaflet
-
-## Background
-
-![1-Logo](Images/1-Logo.png)
-
-Welcome to the United States Geological Survey, or USGS for short! The USGS is responsible for providing scientific data about natural hazards, the health of our ecosystems and environment; and the impacts of climate and land-use change. Their scientists develop new methods and tools to supply timely, relevant, and useful information about the Earth and its processes. As a new hire, you will be helping them out with an exciting new project!
-
-The USGS is interested in building a new set of tools that will allow them visualize their earthquake data. They collect a massive amount of data from all over the world each day, but they lack a meaningful way of displaying it. Their hope is that being able to visualize their data will allow them to better educate the public and other government organizations (and hopefully secure more funding..) on issues facing our planet.
+# Tableau Homework - Citi Bike Analytics
 
 ### Before You Begin
 
-1. Create a new repository for this project called `leaflet-challenge`. **Do not add this homework to an existing repository**.
+* This assignment will be saved to your Tableau Public account rather than GitHub. 
 
-2. Clone the new repository to your computer.
+* If you haven't already, be sure to create a Tableau Public account [here](https://public.tableau.com/s/).
 
-3. Inside your local git repository, create a directory for the Leaflet challenge. Use the folder names to correspond to the challenges: **Leaflet-Step-1** and **Leaflet-Step-2**.
+* The free tier of Tableau only lets you save to their public server. This means that each time you save your file it will be uploaded to your Tableau Public profile. 
 
-4. This homeworks utilizes both **html** and **Javascript** so be sure to add all the necessary files. These will be the main files to run for analysis.
+* You are able to load and continue working on the same workbook.
 
-5. Push the above changes to GitHub or GitLab.
+* When you are finished with your assignment, you will turn in the URL to your Tableau Public workbook along with any additional files used for your analysis. 
 
-## Your Task
+## Background
 
-### Level 1: Basic Visualization
+![Citi-Bikes](Images/citi-bike-station-bikes.jpg)
 
-![2-BasicMap](Images/2-BasicMap.png)
+Congratulations on your new job! As the new lead analyst for the [New York Citi Bike](https://en.wikipedia.org/wiki/Citi_Bike) Program, you are now responsible for overseeing the largest bike sharing program in the United States. In your new role, you will be expected to generate regular reports for city officials looking to publicize and improve the city program.
 
-Your first task is to visualize an earthquake data set.
+Since 2013, the Citi Bike Program has implemented a robust infrastructure for collecting data on the program's utilization. Through the team's efforts, each month bike data is collected, organized, and made public on the [Citi Bike Data](https://www.citibikenyc.com/system-data) webpage.
 
-1. **Get your data set**
+However, while the data has been regularly updated, the team has yet to implement a dashboard or sophisticated reporting process. City officials have a number of questions on the program, so your first task on the job is to build a set of data reports to provide the answers.
 
-   ![3-Data](Images/3-Data.png)
+## Task
 
-   The USGS provides earthquake data in a number of different formats, updated every 5 minutes. Visit the [USGS GeoJSON Feed](http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) page and pick a data set to visualize. When you click on a data set, for example 'All Earthquakes from the Past 7 Days', you will be given a JSON representation of that data. You will be using the URL of this JSON to pull in the data for our visualization.
+**Your task in this assignment is to aggregate the data found in the Citi Bike Trip History Logs and find two unexpected phenomena.** 
 
-   ![4-JSON](Images/4-JSON.png)
+**Design 2-5 visualizations for each discovered phenomena (4-10 total). You may work with a timespan of your choosing. Optionally, you may merge multiple datasets from different periods.** 
 
-2. **Import & Visualize the Data**
+**The following are some questions you may wish to tackle. Do not limit yourself to these questions; they are suggestions for a starting point. Be creative!**
 
-   Create a map using Leaflet that plots all of the earthquakes from your data set based on their longitude and latitude.
+* How many trips have been recorded total during the chosen period?
 
-   * Your data markers should reflect the magnitude of the earthquake in their size and color. Earthquakes with higher magnitudes should appear larger and darker in color.
+* By what percentage has total ridership grown?
 
-   * Include popups that provide additional information about the earthquake when a marker is clicked.
+* How has the proportion of short-term customers and annual subscribers changed?
 
-   * Create a legend that will provide context for your map data.
+* What are the peak hours in which bikes are used during summer months?
 
-   * Your visualization should look something like the map above.
+* What are the peak hours in which bikes are used during winter months?
 
-- - -
+* Today, what are the top 10 stations in the city for starting a journey? (Based on data, why do you hypothesize these are the top locations?)
 
-### Level 2: More Data (Optional)
+* Today, what are the top 10 stations in the city for ending a journey? (Based on data, why?)
 
-![5-Advanced](Images/5-Advanced.png)
+* Today, what are the bottom 10 stations in the city for starting a journey? (Based on data, why?)
 
-The USGS wants you to plot a second data set on your map to illustrate the relationship between tectonic plates and seismic activity. You will need to pull in a second data set and visualize it along side your original set of data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
+* Today, what are the bottom 10 stations in the city for ending a journey (Based on data, why?)
 
-In this step we are going to..
+* Today, what is the gender breakdown of active participants (Male v. Female)?
 
-* Plot a second data set on our map.
+* How effective has gender outreach been in increasing female ridership over the timespan?
 
-* Add a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
+* How does the average trip duration change by age?
 
-* Add layer controls to our map.
+* What is the average distance in miles that a bike is ridden?
 
-- - -
+* Which bikes (by ID) are most likely due for repair or inspection in the timespan?
 
-### Assessment
+* How variable is the utilization by bike ID?
+
+**Next, as a chronic over-achiever:**
+
+* Use your visualizations (does not have to be all of them) to design a dashboard for each phenomena.
+* The dashboards should be accompanied with an analysis explaining why the phenomena may be occuring. 
+
+**City officials would also like to see one of the following visualizations:**
+
+* **Basic:** A static map that plots all bike stations with a visual indication of the most popular locations to start and end a journey with zip code data overlaid on top.
+
+* **Advanced:** A dynamic map that shows how each station's popularity changes over time (by month and year). Again, with zip code data overlaid on the map.
+
+* The map you choose should also be accompanied by a write-up unveiling any trends that were noticed during your analysis.
+
+**Finally, create your final presentation**
+
+* Create a Tableau story that brings together the visualizations, requested maps, and dashboards.
+* This is what will be presented to the officials, so be sure to make it professional, logical, and visually appealing. 
+
+## Considerations
+
+Remember, the people reading your analysis will **NOT** be data analysts. Your audience will be city officials, public administrators, and heads of New York City departments. Your data and analysis needs to be presented in a way that is focused, concise, easy-to-understand, and visually compelling. Your visualizations should be colorful enough to be included in press releases, and your analysis should be thoughtful enough for dictating programmatic changes. 
+
+## Submission 
+
+Your final submission should include:
+
+* A link to your Tableau Public workbook that includes: 
+  * 4-10 Total "Phenomenon" Visualizations 
+  * 2 Dashboards
+  * 1 City Official Map
+  * 1 Story 
+* A text or markdown file with your analysis on the phenomenons you uncovered from the data.
+
+## Sharing Your Work
+In order to share your work, we are asking that you will save your workbook as a .twbx file so that your TA's can grade them.
+
+To save your workbook as a .twbx file, you will just need to select "Save As..." from the "File" dropdown. Then, select the .twbx option.
+
+## Assessment
 
 Your final product will be assessed on the following metrics:
 
-* Completion of assigned tasks
+* Analytic Rigor
 
-* Visual appearance
+* Readability
 
-* Professionalism
+* Visual Attraction
 
-**Good luck!**
+
+## Hints
+
+* You may need to get creative in how you combine each of the CSV files. Don't just assume Tableau is the right tool for the job. At this point, you have a wealth of technical skills and research abilities. Dig for an approach that works and just go with it.
+
+* Don't just assume the CSV format hasn't changed since 2013. Subtle changes to the formats in any of your columns can blockade your analysis. Ensure your data is consistent and clean throughout your analysis. (Hint: Start and End Time change at some point in the history logs).
+
+* Consider building your visualizations with small extracts of the data (i.e. single files) before attempting to import the whole thing. What you will find is that importing all 20+ million records of data will create performance issues quickly. Welcome to "Big Data."
+
+* While utilizing all of the data may seem like a nice power play, consider the time-course in making your analysis. Is data from 2013 the most relevant for making bike replacement decisions today? Probably not. Don't let overwhelming data fool you. Ground your analysis in common sense.
+
+* Remember, data alone doesn't "answer" anything. You will need to accompany your data visualizations with clear and directed answers and analysis.
+
+* As is often the case, your clients are asking for a LOT of answers. Be considerate about their need-to-know and the importance of not "cramming in everything". Of course, answer each question, but do so in a way that is organized and presentable.
+
+* Since this is a project for the city, spend the appropriate time thinking through decisions on color schemes, fonts, and visual story-telling. The Citi Bike program has a clear visual footprint. As a suggestion, look for ways to have your data visualizations match their aesthetic tones.
+
+* Pay attention to labels. What exactly is "time duration"? What's the value of "age of birth"? You will almost certainly need calculated fields to get what you need.
+
+* Keep a close eye for obvious outliers or false data. Not everyone who signs up for the program is answering honestly.
+
+* In answering the question of "why" a phenomenon is occurring, consider adding other pieces of information on socioeconomic or other geographic data. Tableau has a map "layer" feature that you may find handy.
+
+* Don't be afraid to manipulate your data and play with settings in Tableau. Tableau is meant to be explored. We haven't covered all that you need -- so you will need to keep an eye out for new tricks.
+
+* Treat this as a serious endeavor! This is an opportunity to show future employers that you have what it takes to be a top-notch analyst. 
+
+* Good luck!
 
 ### Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
-# citi-bikes
+Data Boot Camp © 2019. All Rights Reserved.
