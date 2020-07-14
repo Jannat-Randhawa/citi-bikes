@@ -6,7 +6,7 @@ For this project I analyzed citiBikes data from 2013 to 2020. I chose
 still pretty crucial to realize the impact of pandamic on bike sharing. 
 The data collected was analyzed in terms of Age, Users and other variables. 
 
-STORY NUMBER 1 
+DASHBOARD 1
 
 From the weekday analysis, it is pretty evident that bike sharing rates go 
 up during the weekends especially on Friday and Saturday. When analyzing the 
@@ -18,7 +18,7 @@ from the top ten and bottom ten station ID, it can be inferred that the top
 10 station ID's are probably located in more accessible areas where as bottom 10 
 are located in more remote areas. 
 
-STORY NUMBER 2 
+DASHBOARD 2
 
 In the analysis of trip duration and user, it can be concluded that subscribers 
 have a higher trip duration than customer across all 4 years. In terms of the Age 
