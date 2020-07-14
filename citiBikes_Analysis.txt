@@ -1,0 +1,32 @@
+Citi Bikes Analysis Project New York. 
+
+For this project I analyzed citiBikes data from 2013 to 2020. I chose 
+2013, since it began in 2013 and chose it compare it to data from
+2018, 2019 and 2020.  Though the data from 2020 was pretty minimal it was 
+still pretty crucial to realize the impact of pandamic on bike sharing. 
+The data collected was analyzed in terms of Age, Users and other variables. 
+
+STORY NUMBER 1 
+
+From the weekday analysis, it is pretty evident that bike sharing rates go 
+up during the weekends especially on Friday and Saturday. When analyzing the 
+busiest hours of the day 5pm seem to the hour with the maximum activity. 
+
+From the analysis of the station id'd particularly the start station ID, 
+stations close to central park seem to be the busiest. From our analysis 
+from the top ten and bottom ten station ID, it can be inferred that the top 
+10 station ID's are probably located in more accessible areas where as bottom 10 
+are located in more remote areas. 
+
+STORY NUMBER 2 
+
+In the analysis of trip duration and user, it can be concluded that subscribers 
+have a higher trip duration than customer across all 4 years. In terms of the Age 
+Vs Trip analysis, in 2018 people around the age of 32 utilized bike share more than 
+the other ages, however in 2019 people around the age of 17 travelled more by bike. 
+In terms of the users, unknown gender customers seem to be the highest users of the bike
+especially in 2013, where all bike customers are unknown. Male cutomers are higher than 
+female customers, across all years 2013, 2018 and 2019. In terms of subscribers, male 
+subscribers are almost higher than 70% for all the datasets. In terms of the average age 
+of the subscribers and customers the average age of males and females is around 30 to 50. 
+But strangely for unknown customers is around 45 to 50 for both subscribers and customers. 
